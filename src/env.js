@@ -6,15 +6,8 @@ import {
   } from "https://raw.githubusercontent.com/denoland/deno/std/0.79.0/std/path/mod.ts";
   
 
-var homedir;
-for (const dirEntry of Deno.readDirSync("home")) {
-    homedir = dirEntry.name;
-}
-
-var tmpdir;
-for (const dirEntry of Deno.readDirSync("tmp")) {
-    tmpdir = dirEntry.name;
-}
+const homedir = Deno.env.get("HOME");
+const tmpdir = Deno.env.get("tmp");
 
 const macos = (name) => {
     if (!homedir) {
