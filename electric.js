@@ -4,7 +4,7 @@ import * as path from "https://deno.land/std@0.79.0/path/mod.ts";
 import { copySync, existsSync } from "https://deno.land/std@0.79.0/fs/mod.ts";
 import * as colors from "https://deno.land/std@0.79.0/fmt/colors.ts";
 //import { decompress } from "https://deno.land/x/lz4@v0.1.1/mod.ts";
-import { readZip } from "https://raw.githubusercontent.com/hayd/deno-zip/6ab1cf5081dbe63d55016a74c79df98025e2b5e3/mod.ts";
+import { readZip } from "https://deno.land/x/jszip/mod.ts";
 import env from "./src/env.js";
 import { crossPlatformPathConversion, printProgressBar } from "./src/util.js";
 import { cacheDenoModulesLocally, updateRunCommand } from "./src/package.js";
