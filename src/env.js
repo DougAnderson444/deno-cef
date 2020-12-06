@@ -3,7 +3,7 @@
 import {
     join as pathJoin,
     basename as pathBasename,
-  } from "https://deno.land/std@0.55.0/path/mod.ts";
+  } from "https://raw.githubusercontent.com/denoland/deno/std/0.79.0/std/path/mod.ts";
   
 const homedir = Deno.dir("home");
 const tmpdir = Deno.dir("tmp");

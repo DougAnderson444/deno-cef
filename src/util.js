@@ -1,6 +1,6 @@
 "use strict";
 
-import * as colors from "https://deno.land/std@0.55.0/fmt/colors.ts";
+import * as colors from "https://raw.githubusercontent.com/denoland/deno/std/0.79.0/std/fmt/colors.ts";
 
 export function crossPlatformPathConversion(filePath) {
 	if (Deno.build.os === "win") {

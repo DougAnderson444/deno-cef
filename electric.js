@@ -6,7 +6,7 @@ import * as path from "https://raw.githubusercontent.com/denoland/deno/std/0.79.
 import { copySync, existsSync } from "https://raw.githubusercontent.com/denoland/deno/std/0.79.0/std/fs/mod.ts"
 // import { copySync, existsSync } from "https://deno.land/std@0.79.0/fs/mod.ts";
 
-import * as colors from "https://deno.land/std@0.79.0/fmt/colors.ts";
+import * as colors from "https://raw.githubusercontent.com/denoland/deno/std/0.79.0/std/fmt/colors.ts";
 //import { decompress } from "https://deno.land/x/lz4@v0.1.1/mod.ts";
 
 import { readZip } from "https://raw.githubusercontent.com/DougAnderson444/deno-zip/master/mod.ts";

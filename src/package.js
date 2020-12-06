@@ -1,6 +1,6 @@
 import env from "./env.js";
-import * as path from "https://deno.land/std@0.55.0/path/mod.ts";
-import { copySync } from "https://deno.land/std@0.55.0/fs/mod.ts";
+import * as path from "https://raw.githubusercontent.com/denoland/deno/std/0.79.0/std/path/mod.ts";
+import { copySync } from "https://raw.githubusercontent.com/denoland/deno/std/0.79.0/std/fs/mod.ts";
 
 export function cacheDenoModulesLocally() {
 	let denoCacheDir = env("deno", {suffix: ""}).cache;
