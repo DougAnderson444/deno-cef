@@ -224,6 +224,7 @@ if (import.meta.main) {
                 */
 
             case "create":
+                console.log('arg: ', Deno.args[0]);
                 if (platformName === "mac") {platformName = "darwin";}
                 
                 if (!existsSync(getCacheDirectory())) {
